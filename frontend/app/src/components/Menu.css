@@ -1,0 +1,107 @@
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  background: #fff;
+  transition: transform 0.2s;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+.filters button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+  cursor: pointer;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+  padding: 40px;
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+}
+
+.image-wrapper {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.menu-card:hover img {
+  transform: scale(1.1);
+}
+
+.price-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff6b00;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.menu-info {
+  padding: 16px;
+  text-align: center;
+}
+
+.menu-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.menu-info .category {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #777;
+}
